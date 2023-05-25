@@ -1,0 +1,171 @@
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: 'Montserrat', sans-serif;
+    min-height:100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin:30px auto;
+    gap:10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 10px hsl(24, 8%, 88%);
+    width: min(330px,90%);
+}
+
+picture,img{
+    display: block;
+    height:100%;
+    overflow: hidden;
+}
+
+img{
+    object-fit: cover;
+    position: 23px 54px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+main section article {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+   padding: 30px;
+}
+
+h1, .current-price{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-weight: 700;
+    color:hsl(212, 21%, 14%);
+    margin: 10px 0;
+}
+
+.current-price{
+ color:hsl(158, 36%, 37%);
+
+}
+
+article>span{
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+article>p{
+    line-height: 1.653;
+}
+
+article>p, article>span, .old-price{
+font-size: 14px;
+color:hsl(228, 12%, 48%);
+}
+
+button{
+    border:none;
+    display:block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: hsl(158, 36%, 37%);
+    padding: 20px;
+    color: white;
+    width:100%;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+button:before{
+    content:url(/assets/images/icon-cart.svg);
+    margin-right: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #1a4031;
+}
+
+section div{
+    display:flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items:center;
+}
+
+.old-price{
+    text-decoration: line-through;
+}
+
+footer{
+    display:flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: 20px;;
+}
+
+.attribution { 
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+ }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution a:hover{
+    color: hsl(228, 84%, 66%);
+}
+
+
+@media screen and (min-width: 768px) {
+        
+    main{
+        flex-direction: row;
+        width: 700px;
+        margin:auto;  
+        }
+
+    main > *{
+        width:50%;
+    }
+
+    img{ transition: all .5s ease-in-out;
+        
+    }
+
+    section > article{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;  
+    }
+
+    section > article > p{
+            font-size: 16px;
+    }
+
+    section > article > h1, section .current-price{
+            font-size: 43px;
+    }
+
+    picture{
+        border-radius: 10px  0 0 10px;
+    }
+
+    img:hover{
+            transform: scale(1.2);
+            
+    }
+
+    }
