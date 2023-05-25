@@ -28,13 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![ desktop](/assets/images/desktop-screenshot.png) ![ mobile](/assets/images/mobile-screenshot.png) {width = 200}
-
+![ desktop](/assets/images/desktop-screenshot.png) !<img src="/assets/images/mobile-screenshot.png" alt="mobile" width="200"/>
 
 
 ### Links
 
-- Live Site URL: [Vercel](https://product-preview-card-component.vercel.app/)
+- Live Site URL: [Vercel](https://vercel.com/hanane05/product-preview-card-component)
 
 ## My process
 

@@ -96,11 +96,14 @@ button:hover{
     background-color: #1a4031;
 }
 
-section div{
+
+
+section>article>div{
     display:flex;
     gap: 10px;
     margin-top: 10px;
     align-items:center;
+
 }
 
 .old-price{
@@ -159,8 +162,8 @@ footer{
             font-size: 43px;
     }
 
-    picture{
-        border-radius: 10px  0 0 10px;
+    picture, img{
+        border-radius: 10px 0 0 10px;
     }
 
     img:hover{
